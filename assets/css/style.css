@@ -1,0 +1,39 @@
+/* menu */
+
+
+.card {
+height: 100%;
+}
+
+.card-img-top {
+height: 180px;
+object-fit: cover;
+}
+
+.card-title {
+font-size: 16px;
+font-weight: bold;
+}
+
+.card-text {
+font-size: 14px;
+}
+
+.price {
+color: orangered;
+font-size: 18px;
+}
+
+.btn-order {
+background-color: orangered;
+color: white;
+border: none;
+}
+
+.btn-order:hover {
+background-color: red;
+color: white;
+}
+.card:hover{
+    scale: 1.02 ;
+}
