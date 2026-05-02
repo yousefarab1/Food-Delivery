@@ -5,35 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Delivery</title>
     <link rel="stylesheet" href="./css/bootstrap.css" />
-    <style></style>
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <nav id="header"></nav>
-    <!-- landing page -->
-    <div class="mt-5 bg-warning" style="height: 50vh">
-      <div class="m-5 p-5">
-        <h1>Delicious Food Delivered to Your Door</h1>
-        <p class="pt-5">
-          Order from your favorite restaurants or discover amazing recipes to
-          cook at home
-        </p>
-        <div class="p-5 m-5">
-          <button
-            class="btn btn-outline-success bg-success text-white m-4"
-            style="width: 150px; border-radius: 20px"
-          >
-            btn1
-          </button>
-          <button
-            class="btn btn-outline-success m-4"
-            style="width: 150px; border-radius: 20px"
-          >
-            btn2
-          </button>
+    <nav id="header" style="height: 150px"></nav>
+    <div class="hero">
+      <h1>
+        Delicious Food <br />
+        Delivered to Your Door
+      </h1>
+      <p>Order from your favorite restaurants or discover amazing recipes</p>
+      <button class="btn btn-light me-2">
+        <a href="./pages/menu.html" class="text-decoration-none text-dark"
+          >Order Now</a
+        >
+      </button>
+      <button class="btn btn-outline-light">
+        <a href="./pages/galary.html" class="text-decoration-none text-dark"
+          >Browse Recipes</a
+        >
+      </button>
+    </div>
+
+    <div class="container my-5">
+      <h4 class="mb-4">Browse by Category</h4>
+
+      <div class="row text-center g-3">
+        <div class="col-md-3 col-6">
+          <div class="category-box shadow-sm">
+            🍕
+            <p>Pizza</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="category-box shadow-sm">
+            🍔
+            <p>Burgers</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="category-box shadow-sm">
+            🥗
+            <p>Healthy</p>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="category-box shadow-sm">
+            🍰
+            <p>Desserts</p>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div class="d-flex justify-content-between mb-4">
+        <h4>Featured Items</h4>
+        <span class="text-danger"
+          ><a href="./pages/menu.html" class="text-danger">View All →</a></span
+        >
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-3 col-6">
+          <div class="card shadow-sm">
+            <img src="./assets/images/margherita pizza.jpg" />
+            <div class="card-body">
+              <span class="badge bg-danger">Pizza</span>
+              <h6 class="mt-2">Margherita Pizza</h6>
+              <p>⭐ 4.8 <small class="text-muted">(120+)</small></p>
+              <hr />
+              <div class="d-flex justify-content-between">
+                <span class="price">$12.99</span>
+                <button class="btn btn-order btn-sm">
+                  <a
+                    href="./pages/cart.html"
+                    class="text-decoration-none text-white"
+                    >Order</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="card shadow-sm">
+            <img src="./assets/images/Classic Cheeseburger.jpg" />
+            <div class="card-body">
+              <span class="badge bg-danger">Burger</span>
+              <h6 class="mt-2">Classic Burger</h6>
+              <p>⭐ 4.7</p>
+              <hr />
+              <div class="d-flex justify-content-between">
+                <span class="price">$9.99</span>
+                <button class="btn btn-order btn-sm">
+                  <a
+                    href="./pages/cart.html"
+                    class="text-decoration-none text-white"
+                    >Order</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="card shadow-sm">
+            <img src="./assets/images/Classic Cheeseburger.jpg" />
+            <div class="card-body">
+              <span class="badge bg-danger">Healthy</span>
+              <h6 class="mt-2">Rainbow Bowl</h6>
+              <p>⭐ 4.9</p>
+              <hr />
+              <div class="d-flex justify-content-between">
+                <span class="price">$11.99</span>
+                <button class="btn btn-order btn-sm">
+                  <a
+                    href="./pages/cart.html"
+                    class="text-decoration-none text-white"
+                    >Order</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-6">
+          <div class="card shadow-sm">
+            <img src="./assets/images/Fresh Fruit Mix.jpg" />
+            <div class="card-body">
+              <span class="badge bg-danger">Dessert</span>
+              <h6 class="mt-2">Ma7shy 3nab</h6>
+              <p>⭐ 4.6</p>
+              <hr />
+              <div class="d-flex justify-content-between">
+                <span class="price">$6.99</span>
+                <button class="btn btn-order btn-sm">
+                  <a
+                    href="./pages/cart.html"
+                    class="text-decoration-none text-white"
+                    >Order</a
+                  >
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer id="footer" class="mt-4"></footer>
+
     <script src="./assets/js/app.js"></script>
   </body>
 </html>

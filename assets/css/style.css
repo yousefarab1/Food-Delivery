@@ -1,3 +1,18 @@
+
+
+/* Hero */
+.hero {
+background-color: #ff3d00;
+color: white;
+padding: 60px 20px;
+text-align: center;
+border-radius: 0 0 20px 20px;
+}
+
+.hero p {
+color: #ffd1c2;
+}
+
 /* menu */
 
 
@@ -36,4 +51,53 @@ color: white;
 }
 .card:hover{
     scale: 1.02 ;
+}
+
+/* Cards */
+.card {
+border-radius: 15px;
+overflow: hidden;
+border: none;
+}
+
+.card img {
+height: 180px;
+object-fit: cover;
+}
+
+.price {
+font-weight: bold;
+}
+
+.btn-order {
+background-color: #ff3d00;
+color: white;
+border-radius: 10px;
+}
+
+/* Categories */
+.category-box {
+background: white;
+border-radius: 15px;
+padding: 20px;
+transition: 0.3s;
+}
+
+.category-box:hover {
+transform: scale(1.05);
+}
+
+
+.footer {
+background-color: #0d1b2a;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-link {
+color: #ccc;
+text-decoration: none;
+}
+
+.footer-link:hover {
+color: #fff;
 }
