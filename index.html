@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <nav id="header" style="height: 150px"></nav>
+    <nav id="header" style="height: 90px"></nav>
     <div class="hero">
       <h1>
         Delicious Food <br />
@@ -21,7 +21,7 @@
         >
       </button>
       <button class="btn btn-outline-light">
-        <a href="./pages/galary.html" class="text-decoration-none text-dark"
+        <a href="./pages/recipes.html" class="text-decoration-none text-dark"
           >Browse Recipes</a
         >
       </button>
@@ -62,95 +62,120 @@
     </div>
 
     <div class="container">
-      <div class="d-flex justify-content-between mb-4">
-        <h4>Featured Items</h4>
-        <span class="text-danger"
-          ><a href="./pages/menu.html" class="text-danger">View All →</a></span
-        >
-      </div>
-
       <div class="row g-4">
-        <div class="col-md-3 col-6">
-          <div class="card shadow-sm">
-            <img src="./assets/images/margherita pizza.jpg" />
+        <div class="col-md-3">
+          <div class="card">
+            <div style="overflow: hidden">
+              <img
+                src="../assets/images/margherita pizza.jpg"
+                class="card-img-top img"
+                alt="Pizza"
+              />
+            </div>
+
             <div class="card-body">
               <span class="badge bg-danger">Pizza</span>
-              <h6 class="mt-2">Margherita Pizza</h6>
-              <p>⭐ 4.8 <small class="text-muted">(120+)</small></p>
+              <h5 class="card-title mt-2">Margherita Pizza</h5>
+              <p class="card-text">
+                ⭐ 4.8 <small class="text-muted">(120+ reviews)</small>
+              </p>
               <hr />
-              <div class="d-flex justify-content-between">
-                <span class="price">$12.99</span>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="price mb-0">$12.99</p>
                 <button class="btn btn-order btn-sm">
                   <a
-                    href="./pages/cart.html"
+                    href="../pages/cart.html"
                     class="text-decoration-none text-white"
-                    >Order</a
+                    >Order Now</a
                   >
                 </button>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div style="overflow: hidden">
+              <img
+                src="../assets/images/Pepperoni Classic.jpg"
+                class="card-img-top img"
+                alt="Pizza"
+              />
+            </div>
 
-        <div class="col-md-3 col-6">
-          <div class="card shadow-sm">
-            <img src="./assets/images/Classic Cheeseburger.jpg" />
             <div class="card-body">
-              <span class="badge bg-danger">Burger</span>
-              <h6 class="mt-2">Classic Burger</h6>
-              <p>⭐ 4.7</p>
+              <span class="badge bg-danger">Pizza</span>
+              <h5 class="card-title mt-2">Pepperoni Classic</h5>
+              <p class="card-text">
+                ⭐ 4.9 <small class="text-muted">(120+ reviews)</small>
+              </p>
               <hr />
-              <div class="d-flex justify-content-between">
-                <span class="price">$9.99</span>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="price mb-0">$14.99</p>
                 <button class="btn btn-order btn-sm">
                   <a
-                    href="./pages/cart.html"
+                    href="../pages/cart.html"
                     class="text-decoration-none text-white"
-                    >Order</a
+                    >Order Now</a
                   >
                 </button>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div style="overflow: hidden">
+              <img
+                src="../assets/images/Cheese Lovers.jpg"
+                class="card-img-top img"
+              />
+            </div>
 
-        <div class="col-md-3 col-6">
-          <div class="card shadow-sm">
-            <img src="./assets/images/Classic Cheeseburger.jpg" />
             <div class="card-body">
-              <span class="badge bg-danger">Healthy</span>
-              <h6 class="mt-2">Rainbow Bowl</h6>
-              <p>⭐ 4.9</p>
+              <span class="badge bg-danger">Pizza</span>
+              <h5 class="card-title mt-2">Cheese Lovers</h5>
+              <p class="card-text">
+                ⭐ 4.7 <small class="text-muted">(120+ reviews)</small>
+              </p>
               <hr />
-              <div class="d-flex justify-content-between">
-                <span class="price">$11.99</span>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="price mb-0">$13.99</p>
                 <button class="btn btn-order btn-sm">
                   <a
-                    href="./pages/cart.html"
+                    href="../pages/cart.html"
                     class="text-decoration-none text-white"
-                    >Order</a
+                    >Order Now</a
                   >
                 </button>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div style="overflow: hidden">
+              <img
+                src="../assets/images/Chocolate Delight.jpg"
+                class="card-img-top img"
+                alt="Dessert"
+              />
+            </div>
 
-        <div class="col-md-3 col-6">
-          <div class="card shadow-sm">
-            <img src="./assets/images/Fresh Fruit Mix.jpg" />
             <div class="card-body">
-              <span class="badge bg-danger">Dessert</span>
-              <h6 class="mt-2">Ma7shy 3nab</h6>
-              <p>⭐ 4.6</p>
+              <span class="badge bg-danger">Desserts</span>
+              <h5 class="card-title mt-2">Chocolate Delight</h5>
+              <p class="card-text">
+                ⭐ 4.7 <small class="text-muted">(120+ reviews)</small>
+              </p>
               <hr />
-              <div class="d-flex justify-content-between">
-                <span class="price">$6.99</span>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="price mb-0">$6.99</p>
                 <button class="btn btn-order btn-sm">
                   <a
-                    href="./pages/cart.html"
+                    href="../pages/cart.html"
                     class="text-decoration-none text-white"
-                    >Order</a
+                    >Order Now</a
                   >
                 </button>
               </div>

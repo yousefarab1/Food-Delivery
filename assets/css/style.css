@@ -49,8 +49,14 @@ border: none;
 background-color: red;
 color: white;
 }
+
+
 .card:hover{
-    scale: 1.02 ;
+    .img{
+        transition: 0.4s ease;
+        scale: 1.09 ;
+    }
+    box-shadow: 2px 2px 10px rgb(255, 68, 0);
 }
 
 /* Cards */
