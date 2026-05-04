@@ -12,34 +12,45 @@ document.getElementById("footer").innerHTML = html;
 });
 
 
-const num = document.getElementsByClassName("number")[0]
-const price = Number(document.getElementsByClassName('price')[0].innerText)
-const total_price = document.getElementsByClassName('total-price')[0]
-const total_price1 = document.getElementsByClassName('total-price')[1]
-var count = 0
-
 function increase(e) {
-    count++
-    update()
+    const parent = e.target.parentElement;
+    const numElement = parent.querySelector('.number');
+    
+    let count = parseInt(numElement.innerText);
+    count++;
+    numElement.innerText = count;
+    
+    updateTotal();
 }
 
 function decrease(e) {
+    const parent = e.target.parentElement;
+    const numElement = parent.querySelector('.number');
+    
+    let count = parseInt(numElement.innerText);
     if (count > 0) {
-        count--
-        update()
+        count--;
+        numElement.innerText = count;
+        updateTotal();
     }
 }
 
-function update() {
-    num.innerText = count
-    const total = price * count
-    total_price.innerText = total
-    total_price1.innerText = total
+function updateTotal() {
+    let subtotal = 0;
+    
+    const cards = document.querySelectorAll('.card-body');
+    
+    cards.forEach(card => {
+        const price = parseFloat(card.querySelector('.price').innerText);
+        const count = parseInt(card.querySelector('.number').innerText);
+        subtotal += price * count;
+    });
+
+    const totalDisplays = document.getElementsByClassName('total-price');
+    
+    totalDisplays[0].innerText = subtotal.toFixed(2);
+    totalDisplays[1].innerText = subtotal.toFixed(2);
 }
-
-
-
-
 
 
 
