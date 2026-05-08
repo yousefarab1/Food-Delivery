@@ -14,7 +14,21 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <nav id="header" style="height: 90px"></nav>
+    <nav id="header" style="height: 85px"></nav>
+    <div
+      class="alert alert-warning alert-dismissible fade show text-center mb-0"
+      role="alert"
+    >
+      <strong>🚨 Limited Time Offer:</strong> Get 20% OFF your first order! Use
+      code: <b>FOODHUB20</b>
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
     <div class="hero">
       <h1>
         Delicious Food <br />
@@ -35,33 +49,54 @@
 
     <div class="container my-5">
       <h4 class="mb-4">Browse by Category</h4>
-
       <div class="row text-center g-3">
         <div class="col-md-3 col-6">
           <div class="category-box shadow-sm">
-            🍕
-            <p>Pizza</p>
+            <a
+              href="./pages/menu.html#pizza"
+              class="text-decoration-none text-black"
+              >🍕
+              <br />
+              Pizza</a
+            >
           </div>
         </div>
 
         <div class="col-md-3 col-6">
           <div class="category-box shadow-sm">
-            🍔
-            <p>Burgers</p>
+            <a
+              href="./pages/menu.html#burger"
+              class="text-decoration-none text-black"
+              >🍔
+              <br />
+              Burgers</a
+            >
           </div>
         </div>
 
         <div class="col-md-3 col-6">
           <div class="category-box shadow-sm">
-            🥗
-            <p>Healthy</p>
+            <a
+              href="./pages/menu.html#healthy"
+              class="text-decoration-none text-black"
+              >🥗
+              <br />
+              Healthy</a
+            >
           </div>
         </div>
 
         <div class="col-md-3 col-6">
           <div class="category-box shadow-sm">
-            🍰
-            <p>Desserts</p>
+            <a
+              href="./pages/menu.html#dessert"
+              class="text-decoration-none text-black"
+            >
+              🍰
+              <br />
+
+              Desserts</a
+            >
           </div>
         </div>
       </div>
@@ -323,7 +358,7 @@
     </div>
 
     <footer id="footer" class="mt-4"></footer>
-
+    <script src="./assets/js/bootstrap.bundle.js"></script>
     <script src="./assets/js/app.js"></script>
   </body>
 </html>
