@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="header" style="height: 90px"></nav>
+    <form
+      class="container d-flex justify-content-center p-5 bg-body-secondary mt-5"
+    >
+      <div class="w-50">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Massage</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+            placeholder="message"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-5">
+          <button class="btn btn-order btn-sm" type="submit">
+            Send Message
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <footer id="footer" class="mt-4"></footer>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
